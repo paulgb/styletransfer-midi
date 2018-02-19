@@ -81,10 +81,6 @@ def main():
         img.save(outfile)
 
         r = {
-            #'target_sets': [
-            #    package_target_set('style', style_weights, losses[8:]),
-            #    package_target_set('content', content_weights, losses[:8]),
-            #],
             'img': outfile,
             'layers': package_layers(
                 zip(layers, content_weights,
