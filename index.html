@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="ui/ui.js"></script>
+
+    <style>
+        body {
+            font-family: monospace;
+        }
+
+        .vis div {
+            width: 70px;
+            background-color: #eee;
+            margin-bottom: 2px;
+        }
+
+        .vis div div {
+            height: 10px;
+        }
+
+        .vis .loss {
+            background-color: #500;
+        }
+
+        .vis .weight {
+            background-color: #055;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="float: left;">
+        <img id="result" />
+    </div>
+    <div style="float: left; margin-left: 10px;">
+        <table id="metrics">
+            <thead>
+                <tr id="part_names">
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div id="loss">
+        </div>
+    </div>
+
+</body>
+
+</html>
